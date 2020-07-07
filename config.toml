@@ -1,0 +1,74 @@
+baseURL = "/"
+theme = "JesusIsLord"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+
+[languages]
+  [languages.fr]
+    title = "Église Biblique de Saint-Lazare - Ouvre Bientôt"
+    description = "Soyez informé sur les derniers développements de la nouvelle église qui est à venir dans la communauté Saint-Lazare."
+    weight = 2
+    languageCode = "fr-ca"
+    contentDir = "content/fr"
+    name = "fr"
+
+    [[languages.fr.menu.main]]
+        name = "Accueil"
+        url = "/"
+        weight = 1
+
+    [[languages.fr.menu.main]]
+        name = "A Propos"
+        url = "/a-propos/"
+        weight = 2
+
+    [[languages.fr.menu.main]]
+        name = "Services"
+        url = "/services/"
+        weight = 3
+
+    [[languages.fr.menu.main]]
+        name = "Blog"
+        url = "/blog/"
+        weight = 4
+
+    [[languages.fr.menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 5
+
+[languages.en]
+    title = "Saint-Lazare Bible Church - Coming Soon"
+    description = "Be updated on the latest development about the church plant that is coming soon in Saint-Lazare community."
+    weight = 1
+    languageCode = "en-ca"
+    contentDir = "content/en"
+    name = "en"
+    
+    [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+    
+    [[languages.en.menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 2
+
+    [[languages.en.menu.main]]
+        name = "Services"
+        url = "/Services/"
+        weight = 3
+
+    [[languages.en.menu.main]]
+        name = "Blog"
+        url = "/blog/"
+        weight = 4
+
+    [[languages.en.menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 5

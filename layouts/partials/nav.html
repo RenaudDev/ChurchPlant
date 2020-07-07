@@ -1,0 +1,59 @@
+<nav class="navbar container">
+    <div class="navbar__logo">
+    <a class="navbar-brand" href="{{ .Site.BaseURL }}{{.Site.Language.Lang}}">Framework + CMS</a>
+    </div>
+    <div class="">
+        <ul class="navbar__menu--desktop">
+            {{ range .Site.Menus.main -}}
+                <li><a href="{{ .URL | relLangURL }}" class="navbar__link">{{ .Name }}</a></li>
+            {{ end }}
+            {{ if .IsTranslated }}
+            {{ range .Translations }}
+              {{ if eq .Site.Language.Lang "en" }}
+            <li><a class="navbar__link" title="English" href="{{ .RelPermalink }}">EN</a></li>
+              {{ else }}
+            <li><a class="navbar__link" title="French" href="{{ .RelPermalink }}">FR</a></li>
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            {{ if eq .Site.Language.Lang "fr" }}
+            <li><a class="navbar__link" title="English" href="/en">EN</a></li>
+            {{ else }}
+            <li><a class="navbar__link" title="French" href="/">EN</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+    </div>
+<!-- Mobile Menu -->
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+  
+        <div class="hamburger"><div></div></div>
+        <div class="navbar__menu--mobile">
+        <div>
+            <div>
+            <ul>
+            {{ range .Site.Menus.main -}}
+            <li><a class="navbar__link" href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+            {{ end }}
+            {{ if .IsTranslated }}
+              {{ range .Translations }}
+                {{ if eq .Site.Language.Lang "en" }}
+              <li><a class="navbar__link" title="English" href="{{ .RelPermalink }}">EN</a></li>
+                {{ else }}
+              <li><a class="navbar__link" title="French" href="{{ .RelPermalink }}">FR</a></li>
+                {{ end }}
+              {{ end }}
+            {{ else }}
+              {{ if eq .Site.Language.Lang "fr" }}
+              <li><a class="navbar__link" title="English" href="/en">EN</a></li>
+              {{ else }}
+              <li><a class="navbar__link" title="French" href="/">FR</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.625; /* $line-height-base ÷ $fontbase */
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 5.6rem;
+  line-height: 1; /* $line-height-base ÷ 26 */
+}
+
+h3,
+h4 {
+  font-size: 3.8rem;
+  line-height: 1.444 /* $line-height-base ÷ 18 */
+}
+
+.theme-light {
+    --color-primary: #222;
+    --color-secondary: #fff;
+    --color-accent: dodgerblue;
+    --font-color: #000000;
+
+    .text-primary {
+      color: var(--color-primary);
+    }
+    .text-secondary {
+      color: var(--color-secondary);
+    }
+    .text-accent {
+      color: var(--color-accent);
+    }
+  }
