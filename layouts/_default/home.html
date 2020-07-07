@@ -7,19 +7,24 @@
         </div>
     </div>
 </header>
-<section class="cta">
-    <div class="container-fluid">
-    <div class="cta-row">
-        <div class="cta--heading">
-            <h3>Receive Update About The Church Plant</h3>
+<main class="container about-section">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <h2>{{.Params.about_heading }}</h2>
+            <p>{{.Params.about_text | safeHTML }}</p>
+            <h2>{{.Params.about_heading2 }}</h2>
+            <p>{{.Params.about_text2 | safeHTML }}</p>
+            <div class="form">
+                <h3>Subscribe to the Newsletter</h3>
+                <form class="form-inline" >
+                    <input type="email" id="email" placeholder="Enter email" name="email">
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
         </div>
-        <div class="cta--form">
-            <form class="form-inline" >
-                <input type="email" id="email" placeholder="Enter email" name="email">
-                <button type="submit">Submit</button>
-              </form>
+        <div class="col-lg-6 col-md-12">
+            <img src="img/Jonathan_Camire.jpg" alt="" class="w-100">
         </div>
     </div>
-</div>
-</section>
+</main>
 {{ end }}

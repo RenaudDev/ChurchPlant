@@ -34,31 +34,25 @@
     max-width: 980px;
     text-align: center;
 }
-.cta {
-    padding: 4rem 0;
+/* About Section */
+.about-section {
+    padding: 9.5rem 0;
 
-    .cta--heading {
+    h2 {
         font-size: 3rem;
     }
-    .cta-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    h3 {
+        margin-top: 3.5rem;
+        font-size: 2.5rem;
     }
-    &--heading h3 {
-        font-size: 3rem;
+    p {
+        padding: 25px 0;
     }
-    &--form {
-
-        input {
-            font-size: 1.5rem;
-            border: 2px solid var(--color-primary);
-            margin-right: 1.5rem;
-            padding: 1.5rem;
-        }
+    .form-inline {
+        width: 100%;
     }
 }
+
 /* Style the form - display items horizontally */
 .form-inline {
     display: flex;

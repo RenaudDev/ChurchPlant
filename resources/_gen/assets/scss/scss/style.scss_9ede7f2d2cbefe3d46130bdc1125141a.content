@@ -1083,7 +1083,7 @@ h4 {
   .theme-light .text-accent {
     color: var(--color-accent); }
 
-w-100 {
+.w-100 {
   width: 100%; }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -1159,7 +1159,7 @@ w-100 {
   src: local(""), url("/fonts/lora-v16-latin-700.woff2") format("woff2"), url("/fonts/lora-v16-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
-h1, h3 {
+h1, h2, h3 {
   font-family: 'Lora', sans-serif; }
 
 a {
@@ -1198,22 +1198,18 @@ a {
   max-width: 980px;
   text-align: center; }
 
-.cta {
-  padding: 4rem 0; }
-  .cta .cta--heading {
+/* About Section */
+.about-section {
+  padding: 9.5rem 0; }
+  .about-section h2 {
     font-size: 3rem; }
-  .cta .cta-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-  .cta--heading h3 {
-    font-size: 3rem; }
-  .cta--form input {
-    font-size: 1.5rem;
-    border: 2px solid var(--color-primary);
-    margin-right: 1.5rem;
-    padding: 1.5rem; }
+  .about-section h3 {
+    margin-top: 3.5rem;
+    font-size: 2.5rem; }
+  .about-section p {
+    padding: 25px 0; }
+  .about-section .form-inline {
+    width: 100%; }
 
 /* Style the form - display items horizontally */
 .form-inline {
