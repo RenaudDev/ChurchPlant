@@ -1162,9 +1162,6 @@ w-100 {
 h1, h3 {
   font-family: 'Lora', sans-serif; }
 
-h3 {
-  font-size: 3rem; }
-
 a {
   color: var(--color-primary); }
   a:hover {
@@ -1202,19 +1199,70 @@ a {
   text-align: center; }
 
 .cta {
-  background-color: var(--color-secondary);
   padding: 4rem 0; }
-  .cta .row {
+  .cta .cta--heading {
+    font-size: 3rem; }
+  .cta .cta-row {
     display: flex;
     flex-direction: row;
-    align-items: center; }
-  .cta-heading {
-    color: black; }
-  .cta-form {
+    justify-content: space-around; }
+  .cta--heading {
     display: flex;
-    justify-content: flex-end; }
-  .cta input {
-    padding: .55rem .5rem; }
+    align-items: center; }
+  .cta--form {
+    display: flex;
+    align-items: center; }
+    .cta--form input {
+      font-size: 1.5rem;
+      border: 2px solid var(--color-primary);
+      margin-right: 1.5rem;
+      padding: 1.5rem; }
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0; }
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd; }
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white; }
+
+.form-inline button:hover {
+  background-color: royalblue; }
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    height: 100vh; }
+    .hero--box {
+      padding: 0 20px; }
+    .hero h1 {
+      font-size: 6rem; }
+    .hero h2 {
+      font-size: 6rem; }
+  .cta-row {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center; }
+  .cta--heading h3 {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 2.2rem; } }
 
 .navbar-brand {
   text-decoration: none;
