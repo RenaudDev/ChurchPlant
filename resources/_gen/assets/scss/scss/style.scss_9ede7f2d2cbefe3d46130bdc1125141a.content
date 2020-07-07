@@ -1205,18 +1205,15 @@ a {
   .cta .cta-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
-  .cta--heading {
-    display: flex;
+    justify-content: space-around;
     align-items: center; }
-  .cta--form {
-    display: flex;
-    align-items: center; }
-    .cta--form input {
-      font-size: 1.5rem;
-      border: 2px solid var(--color-primary);
-      margin-right: 1.5rem;
-      padding: 1.5rem; }
+  .cta--heading h3 {
+    font-size: 3rem; }
+  .cta--form input {
+    font-size: 1.5rem;
+    border: 2px solid var(--color-primary);
+    margin-right: 1.5rem;
+    padding: 1.5rem; }
 
 /* Style the form - display items horizontally */
 .form-inline {
